@@ -1,0 +1,42 @@
+DEBUG:root:Parse statement: num_replications=1
+DEBUG:root:Parse statement: num_total_replications=1
+DEBUG:root:Use output file: /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/stream_kernels_single_replicated_xilinx.cl
+DEBUG:root:Use pragma command: //\s*PY_CODE_GEN
+DEBUG:root:Start parsing file: /mnt/2UB102/HPCC_FPGA-master/STREAM/src/device/stream_kernels_single.cl
+DEBUG:root:Failed to evaluate inline code
+DEBUG:root:Executed in global space: 'try:
+    kernel_param_attributes = generate_attributes(num_replications)
+except:
+    kernel_param_attributes = ["" for i in range(num_replications)]
+'
+DEBUG:root:Failed to evaluate inline code
+WARNING:root:Could not execute inline code:
+	Command: '''
+i
+'''
+	Error: name 'i' is not defined
+DEBUG:root:Failed to evaluate inline code
+WARNING:root:Could not execute inline code:
+	Command: '''
+kernel_param_attributes[i]
+'''
+	Error: name 'i' is not defined
+DEBUG:root:Failed to evaluate inline code
+WARNING:root:Could not execute inline code:
+	Command: '''
+kernel_param_attributes[i]
+'''
+	Error: name 'i' is not defined
+DEBUG:root:Failed to evaluate inline code
+WARNING:root:Could not execute inline code:
+	Command: '''
+kernel_param_attributes[i]
+'''
+	Error: name 'i' is not defined
+DEBUG:root:Found block match!
+DEBUG:root:Modify the block!
+DEBUG:root:Evaluated 'i' to '0'
+DEBUG:root:Evaluated 'kernel_param_attributes[i]' to ''
+DEBUG:root:Evaluated 'kernel_param_attributes[i]' to ''
+DEBUG:root:Evaluated 'kernel_param_attributes[i]' to ''
+DEBUG:root:Parsing complete. Write result to file.

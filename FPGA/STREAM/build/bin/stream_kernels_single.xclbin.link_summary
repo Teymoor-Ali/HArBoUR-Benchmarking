@@ -1,0 +1,1264 @@
+<ENTRY>
+{
+ "thisFile": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov 28 21:42:54 2022",
+ "timestampMillis": "1669671774490",
+ "buildStep": {
+  "cmdId": "26c42e46-1101-4dc7-b11a-87e4c3a7c1f9",
+  "name": "v++",
+  "logFile": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2020.2/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"vivado_prop:run.impl_1.{STEPS.PLACE_DESIGN.ARGS.MORE OPTIONS}={-retiming}\" --xp vivado_prop:run.impl_1.STEPS.PHYS_OPT_DESIGN.IS_ENABLED=true --xp vivado_prop:run.impl_1.STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED=true --xp vivado_param:project.writeIntermediateCheckpoints=1 --xp \"misc:report=type report_utilization name synth_report_utilization_summary steps {synth_design} runs {__KERNEL__} options {}\" --xp \"misc:report=type report_utilization name impl_report_utilization_init_design_summary steps {init_design} runs {impl_1} options {}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_init_design_summary steps {init_design} runs {impl_1} options {-max_paths 10}\" --xp \"param:compiler.reportFailfast=pre_opt_design {__KERNEL_NAMES__} post_opt_design {__OCL_TOP__} post_route_design {__SLR__}\" --xp \"misc:report=type report_io name impl_report_io_place_design_summary steps {place_design} runs {impl_1} options {}\" --xp \"misc:report=type report_utilization name impl_report_utilization_place_design_summary steps {place_design} runs {impl_1} options {}\" --xp \"misc:report=type report_control_sets name impl_report_control_sets_place_design_summary steps {place_design} runs {impl_1} options {-verbose}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_place_design_summary steps {place_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_drc name impl_report_drc_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_methodology name impl_report_methodology_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_power name impl_report_power_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_route_status name impl_report_route_status_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_clock_utilization name impl_report_clock_utilization_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_bus_skew name impl_report_bus_skew_route_design_summary steps {route_design} runs {impl_1} options {-warn_on_violation}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -DXILINX_FPGA --report_dir=/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports --log_dir=/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/logs -O3 -t hw -I/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/common/ -I/mnt/2UB102/HPCC_FPGA-master/STREAM/src/device --platform xilinx_u50_gen3x16_xdma_201920_3 -R2 -l --config /mnt/2UB102/HPCC_FPGA-master/STREAM/build/settings/settings.link.xilinx.stream_kernels_single.ini -j 40 -o /mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin xilinx_tmp_compile/stream_kernels_single.xo ",
+  "args": [
+   "-DXILINX_FPGA",
+   "--report_dir=/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports",
+   "--log_dir=/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/logs",
+   "-O3",
+   "-t",
+   "hw",
+   "-I/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/common/",
+   "-I/mnt/2UB102/HPCC_FPGA-master/STREAM/src/device",
+   "--platform",
+   "xilinx_u50_gen3x16_xdma_201920_3",
+   "-R2",
+   "-l",
+   "--config",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/settings/settings.link.xilinx.stream_kernels_single.ini",
+   "-j",
+   "40",
+   "-o",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin",
+   "xilinx_tmp_compile/stream_kernels_single.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/settings/settings.link.xilinx.stream_kernels_single.ini",
+    "content": "\n\n# Set number of available SLRs\n\n[connectivity]\nnk=calc_0:1\n\n# Assign kernels to the SLRs\nslr=calc_0_1:SLR0\n# Assign the kernels to the memory ports\nsp=calc_0_1.m_axi_gmem:HBM[0]\n"
+   }
+  ],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:42:54 2022",
+ "timestampMillis": "1669671774490",
+ "status": {
+  "cmdId": "26c42e46-1101-4dc7-b11a-87e4c3a7c1f9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Nov 28 21:42:57 2022",
+ "timestampMillis": "1669671777143",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u50_gen3x16_xdma_201920_3.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "stream_kernels_single",
+    "file": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "calc_0",
+     "file": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/xilinx_tmp_compile/stream_kernels_single.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xo/calc_0/calc_0/cpu_sources/stream_kernels_single_replicated_xilinx.cl"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "calc_0_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2020.2. SW Build (by xbuild) on 2020-11-18-05:13:29"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 21:42:57 2022",
+ "timestampMillis": "1669671777203",
+ "buildStep": {
+  "cmdId": "1d1403a3-774f-46e7-8222-65279a7e5551",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/xilinx_tmp_compile/stream_kernels_single.xo --config /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm --target hw --output_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int --temp_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/xilinx_tmp_compile/stream_kernels_single.xo",
+   "--config",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/syslinkConfig.ini",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int",
+   "--temp_dir",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/sys_link"
+  ],
+  "iniFiles": [
+   {
+    "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/syslinkConfig.ini",
+    "content": "nk=calc_0:1\nsp=calc_0_1.m_axi_gmem:HBM[0]\nslr=calc_0_1:SLR0\n\n"
+   }
+  ],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:42:57 2022",
+ "timestampMillis": "1669671777203",
+ "status": {
+  "cmdId": "1d1403a3-774f-46e7-8222-65279a7e5551",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:43:03 2022",
+ "timestampMillis": "1669671783971",
+ "status": {
+  "cmdId": "1d1403a3-774f-46e7-8222-65279a7e5551",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 21:43:03 2022",
+ "timestampMillis": "1669671783972",
+ "buildStep": {
+  "cmdId": "712161db-027f-4b72-ab22-36ab49858cd7",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/sdsl.dat -rtd /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/cf2sw.rtd -nofilter /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/cf2sw_full.rtd -xclbin /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xclbin_orig.xml -o /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:43:03 2022",
+ "timestampMillis": "1669671783973",
+ "status": {
+  "cmdId": "712161db-027f-4b72-ab22-36ab49858cd7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:43:05 2022",
+ "timestampMillis": "1669671785223",
+ "status": {
+  "cmdId": "712161db-027f-4b72-ab22-36ab49858cd7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 21:43:05 2022",
+ "timestampMillis": "1669671785224",
+ "buildStep": {
+  "cmdId": "41677829-66bd-40ac-9846-6422589d2556",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:43:05 2022",
+ "timestampMillis": "1669671785224",
+ "status": {
+  "cmdId": "41677829-66bd-40ac-9846-6422589d2556",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 21:43:06 2022",
+ "timestampMillis": "1669671786007",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:43:06 2022",
+ "timestampMillis": "1669671786007",
+ "status": {
+  "cmdId": "41677829-66bd-40ac-9846-6422589d2556",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 21:43:06 2022",
+ "timestampMillis": "1669671786008",
+ "buildStep": {
+  "cmdId": "b6f266b1-84f6-4f55-aa81-78bdcdc5aff7",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 --remote_ip_cache /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/.ipcache --output_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int --log_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/logs/link --report_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link --config /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/vplConfig.ini -k /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link --no-info --iprepo /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xo/ip_repo/xilinx_com_hls_calc_0_1_0 --messageDb /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/run_link/vpl.pb /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u50_gen3x16_xdma_201920_3",
+   "--remote_ip_cache",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/.ipcache",
+   "--output_dir",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int",
+   "--log_dir",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/logs/link",
+   "--report_dir",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link",
+   "--config",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/vplConfig.ini",
+   "-k",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xo/ip_repo/xilinx_com_hls_calc_0_1_0",
+   "--messageDb",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/run_link/vpl.pb",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_utilization name synth_report_utilization_summary steps {synth_design} runs {__KERNEL__} options {}\nmisc=report=type report_utilization name impl_report_utilization_init_design_summary steps {init_design} runs {impl_1} options {}\nmisc=report=type report_timing_summary name impl_report_timing_summary_init_design_summary steps {init_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.reportFailfast=pre_opt_design {__KERNEL_NAMES__} post_opt_design {__OCL_TOP__} post_route_design {__SLR__}\nmisc=report=type report_io name impl_report_io_place_design_summary steps {place_design} runs {impl_1} options {}\nmisc=report=type report_utilization name impl_report_utilization_place_design_summary steps {place_design} runs {impl_1} options {}\nmisc=report=type report_control_sets name impl_report_control_sets_place_design_summary steps {place_design} runs {impl_1} options {-verbose}\nmisc=report=type report_timing_summary name impl_report_timing_summary_place_design_summary steps {place_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_drc name impl_report_drc_route_design_summary steps {route_design} runs {impl_1} options {}\nmisc=report=type report_methodology name impl_report_methodology_route_design_summary steps {route_design} runs {impl_1} options {}\nmisc=report=type report_power name impl_report_power_route_design_summary steps {route_design} runs {impl_1} options {}\nmisc=report=type report_route_status name impl_report_route_status_route_design_summary steps {route_design} runs {impl_1} options {}\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_clock_utilization name impl_report_clock_utilization_route_design_summary steps {route_design} runs {impl_1} options {}\nmisc=report=type report_bus_skew name impl_report_bus_skew_route_design_summary steps {route_design} runs {impl_1} options {-warn_on_violation}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device\nmisc=BinaryName=stream_kernels_single\n\n[connectivity]\nnk=calc_0:1:calc_0_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\nprop=run.impl_1.{STEPS.PLACE_DESIGN.ARGS.MORE OPTIONS}={-retiming}\nprop=run.impl_1.STEPS.PHYS_OPT_DESIGN.IS_ENABLED=true\nprop=run.impl_1.STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED=true\nparam=project.writeIntermediateCheckpoints=1\nsynth.jobs=40\n\n"
+   }
+  ],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:43:06 2022",
+ "timestampMillis": "1669671786008",
+ "status": {
+  "cmdId": "b6f266b1-84f6-4f55-aa81-78bdcdc5aff7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov 28 21:43:06 2022",
+ "timestampMillis": "1669671786969",
+ "buildStep": {
+  "cmdId": "290adf88-b55f-48f3-9752-ad8d27485b17",
+  "name": "vpl",
+  "logFile": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2020.2/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 --remote_ip_cache /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/.ipcache --output_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int --log_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/logs/link --report_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link --config /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/vplConfig.ini -k /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link --no-info --iprepo /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xo/ip_repo/xilinx_com_hls_calc_0_1_0 --messageDb /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/run_link/vpl.pb /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:43:06 2022",
+ "timestampMillis": "1669671786970",
+ "status": {
+  "cmdId": "290adf88-b55f-48f3-9752-ad8d27485b17",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Mon Nov 28 21:43:09 2022",
+ "timestampMillis": "1669671789870",
+ "vivadoProject": {
+  "openDir": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 21:43:09 2022",
+ "timestampMillis": "1669671789870",
+ "buildStep": {
+  "cmdId": "94a6b004-4e7f-4104-babc-dd965d753c4b",
+  "name": "vivado",
+  "logFile": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 21:43:09 2022",
+ "timestampMillis": "1669671789870",
+ "status": {
+  "cmdId": "94a6b004-4e7f-4104-babc-dd965d753c4b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738917",
+ "status": {
+  "cmdId": "94a6b004-4e7f-4104-babc-dd965d753c4b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738934",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738935",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738935",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738935",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738935",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738935",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738936",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738936",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738936",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738936",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738936",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738936",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738936",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738936",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738950",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_init_report_utilization_0.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738955",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_timing_summary_init.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738961",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_timing_summary_init.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738961",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_io_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_IO"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738961",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_utilization_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738964",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_control_sets_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_CONTROL_SETS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738970",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_timing_summary_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738976",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_timing_summary_placed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738976",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_drc_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_DRC"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738976",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_drc_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_DRC"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738977",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_methodology_drc_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_METHODOLOGY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738977",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_methodology_drc_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_METHODOLOGY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738977",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_power_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_POWER"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738986",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_power_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_POWER"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738986",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_route_status.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_ROUTE_STATUS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738992",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738998",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:58 2022",
+ "timestampMillis": "1669675738999",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_clock_utilization_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_CLOCK_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739000",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_bus_skew_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_BUS_SKEW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739002",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_bus_skew_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_BUS_SKEW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739008",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_timing_summary_postroute_physopted.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739014",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/imp/impl_1_hw_bb_locked_timing_summary_postroute_physopted.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739134",
+ "status": {
+  "cmdId": "290adf88-b55f-48f3-9752-ad8d27485b17",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739145",
+ "status": {
+  "cmdId": "b6f266b1-84f6-4f55-aa81-78bdcdc5aff7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739146",
+ "buildStep": {
+  "cmdId": "2d663b5c-237e-4692-b164-16b1a40869dd",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739146",
+ "status": {
+  "cmdId": "2d663b5c-237e-4692-b164-16b1a40869dd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739147",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739147",
+ "buildStep": {
+  "cmdId": "1102f067-77d1-4e27-b615-0b0a979732fd",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/address_map.xml -sdsl /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/sdsl.dat -xclbin /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xclbin_orig.xml -rtd /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single.rtd -o /mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single.xml",
+  "args": [
+   "-a",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single.rtd",
+   "-o",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:48:59 2022",
+ "timestampMillis": "1669675739148",
+ "status": {
+  "cmdId": "1102f067-77d1-4e27-b615-0b0a979732fd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740203",
+ "status": {
+  "cmdId": "1102f067-77d1-4e27-b615-0b0a979732fd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740204",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740204",
+ "buildStep": {
+  "cmdId": "bbfa5348-58bb-4571-b6af-9be24e7836ad",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single.rtd",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740205",
+ "status": {
+  "cmdId": "bbfa5348-58bb-4571-b6af-9be24e7836ad",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740205",
+ "status": {
+  "cmdId": "bbfa5348-58bb-4571-b6af-9be24e7836ad",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740205",
+ "status": {
+  "cmdId": "2d663b5c-237e-4692-b164-16b1a40869dd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740206",
+ "buildStep": {
+  "cmdId": "2933a017-d133-4e9d-998f-a60cb6e13f77",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single.rtd --append-section :JSON:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single_xml.rtd --add-section BUILD_METADATA:JSON:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single_build.rtd --add-section EMBEDDED_METADATA:RAW:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single.xml --add-section SYSTEM_METADATA:RAW:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3 --output /mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single.rtd",
+   "--append-section",
+   ":JSON:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/stream_kernels_single.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3",
+   "--output",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740206",
+ "status": {
+  "cmdId": "2933a017-d133-4e9d-998f-a60cb6e13f77",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740289",
+ "status": {
+  "cmdId": "2933a017-d133-4e9d-998f-a60cb6e13f77",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740290",
+ "buildStep": {
+  "cmdId": "1d4fba77-6992-4f8e-b68f-dac6082a6a58",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin.info --input /mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin.info",
+   "--input",
+   "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/stream_kernels_single.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740290",
+ "status": {
+  "cmdId": "1d4fba77-6992-4f8e-b68f-dac6082a6a58",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740490",
+ "status": {
+  "cmdId": "1d4fba77-6992-4f8e-b68f-dac6082a6a58",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740490",
+ "buildStep": {
+  "cmdId": "db82f9ea-e610-4149-9d88-e7c56a085bf0",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740491",
+ "status": {
+  "cmdId": "db82f9ea-e610-4149-9d88-e7c56a085bf0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740491",
+ "status": {
+  "cmdId": "db82f9ea-e610-4149-9d88-e7c56a085bf0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740492",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/system_estimate_stream_kernels_single.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740719",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/link/v++_link_stream_kernels_single_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740719",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/src/device/_x/v++_link_stream_kernels_single_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740721",
+ "report": {
+  "path": "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/bin/xilinx_reports/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 28 22:49:00 2022",
+ "timestampMillis": "1669675740722",
+ "status": {
+  "cmdId": "26c42e46-1101-4dc7-b11a-87e4c3a7c1f9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

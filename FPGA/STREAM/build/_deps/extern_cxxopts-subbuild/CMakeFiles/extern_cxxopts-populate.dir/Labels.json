@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/CMakeFiles/extern_cxxopts-populate"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/CMakeFiles/extern_cxxopts-populate.rule"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/CMakeFiles/extern_cxxopts-populate-complete.rule"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/extern_cxxopts-populate-prefix/src/extern_cxxopts-populate-stamp/extern_cxxopts-populate-build.rule"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/extern_cxxopts-populate-prefix/src/extern_cxxopts-populate-stamp/extern_cxxopts-populate-configure.rule"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/extern_cxxopts-populate-prefix/src/extern_cxxopts-populate-stamp/extern_cxxopts-populate-download.rule"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/extern_cxxopts-populate-prefix/src/extern_cxxopts-populate-stamp/extern_cxxopts-populate-install.rule"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/extern_cxxopts-populate-prefix/src/extern_cxxopts-populate-stamp/extern_cxxopts-populate-mkdir.rule"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/extern_cxxopts-populate-prefix/src/extern_cxxopts-populate-stamp/extern_cxxopts-populate-patch.rule"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/extern_cxxopts-populate-prefix/src/extern_cxxopts-populate-stamp/extern_cxxopts-populate-test.rule"
+		},
+		{
+			"file" : "/mnt/2UB102/HPCC_FPGA-master/STREAM/build/_deps/extern_cxxopts-subbuild/extern_cxxopts-populate-prefix/src/extern_cxxopts-populate-stamp/extern_cxxopts-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"extern_cxxopts-populate"
+		],
+		"name" : "extern_cxxopts-populate"
+	}
+}

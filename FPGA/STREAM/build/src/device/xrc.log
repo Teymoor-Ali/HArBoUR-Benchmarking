@@ -1,0 +1,13 @@
+Sun Nov 28 21:42:55 2021: Server was asked to start on port: '38475'
+Sun Nov 28 21:42:55 2021: Server is using token UUID: '531f1105-b9a3-47b8-8434-ff0f6fda5903'
+Sun Nov 28 21:42:55 2021: Attempting to start server on port '38475'
+Sun Nov 28 21:42:55 2021: XRC main fifo: created main fifo '/tmp/xrcmain531f1105-b9a3-47b8-8434-ff0f6fda5903', fd read = 15
+Sun Nov 28 21:42:55 2021: Running Rule Check Server
+Sun Nov 28 21:42:55 2021: Version 1.6.1
+Sun Nov 28 21:42:55 2021: Rule Check Server: Accepted socket connection from client
+Sun Nov 28 21:42:55 2021: EXCHANGE_TOKEN received, server token: 531f1105-b9a3-47b8-8434-ff0f6fda5903, passed token: 531f1105-b9a3-47b8-8434-ff0f6fda5903
+Sun Nov 28 21:42:55 2021: SESSION_MGR: creating session with session uuid: '9e291532-fe61-4cf6-bec0-a0ef2d518e75' and name 'v++_link_stream_kernels_single'
+Sun Nov 28 21:42:58 2021: Rule Check Server: Accepted socket connection from client
+Sun Nov 28 21:43:15 2021: Rule Check Server: Accepted socket connection from client
+Sun Nov 28 22:13:35 2021: Rule Check Server: Accepted socket connection from client
+Sun Nov 28 22:49:00 2021: SESSION_MGR: closing session for UUID '9e291532-fe61-4cf6-bec0-a0ef2d518e75' with name 'v++_link_stream_kernels_single'

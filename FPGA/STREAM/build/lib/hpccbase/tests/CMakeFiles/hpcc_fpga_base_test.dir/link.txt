@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhpcc_fpga_base_test.a CMakeFiles/hpcc_fpga_base_test.dir/main.cpp.o CMakeFiles/hpcc_fpga_base_test.dir/hpcc_base_benchmark_test.cpp.o
+/usr/bin/ranlib libhpcc_fpga_base_test.a

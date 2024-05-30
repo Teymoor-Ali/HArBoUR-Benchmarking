@@ -1,0 +1,11 @@
+Read custom sizes of matrix: (256, 256, 256)
+Read custom data directory: /mnt/2UB102/Vitis_Libraries/blas/L3/benchmarks/gemm/memKernel/data/float/
+Read custom kernel number: 1
+[INFO] Enabled Asynchronous Concurrent Kernels: 1
+xfblasCreate  77.810322 msec
+copyToFpga  0.431813 msec
+copyFromFpga  1.688200 msec
+Api time is 2.120013 msec
+DATA_CSV:,Freq,M,K,N,TimeApiMs,EffApiPct,PerfApiTops
+DATA_CSV:,300.000000,256,256,256,2.120013,10.304339,0.015920
+>> Kernel #0 << Test passed!

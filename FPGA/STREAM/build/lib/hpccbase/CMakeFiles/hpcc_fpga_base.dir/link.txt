@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhpcc_fpga_base.a CMakeFiles/hpcc_fpga_base.dir/setup/fpga_setup.cpp.o
+/usr/bin/ranlib libhpcc_fpga_base.a

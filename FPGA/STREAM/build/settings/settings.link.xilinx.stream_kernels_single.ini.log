@@ -1,0 +1,40 @@
+DEBUG:root:Parse statement: num_replications=1
+DEBUG:root:Use output file: /mnt/2UB102/HPCC_FPGA-master/STREAM/build/settings/settings.link.xilinx.stream_kernels_single.ini
+DEBUG:root:Use pragma command: \#\s*PY_CODE_GEN
+DEBUG:root:Start parsing file: /mnt/2UB102/HPCC_FPGA-master/STREAM/settings/settings.link.xilinx.stream_kernels_single.hbm.generator.ini
+DEBUG:root:Evaluated 'num_replications' to '1'
+DEBUG:root:Failed to evaluate inline code
+WARNING:root:Could not execute inline code:
+	Command: '''
+i+1
+'''
+	Error: name 'i' is not defined
+DEBUG:root:Failed to evaluate inline code
+WARNING:root:Could not execute inline code:
+	Command: '''
+i % num_slrs
+'''
+	Error: name 'i' is not defined
+DEBUG:root:Failed to evaluate inline code
+WARNING:root:Could not execute inline code:
+	Command: '''
+i+1
+'''
+	Error: name 'i' is not defined
+DEBUG:root:Failed to evaluate inline code
+WARNING:root:Could not execute inline code:
+	Command: '''
+i
+'''
+	Error: name 'i' is not defined
+DEBUG:root:Failed to evaluate inline code
+DEBUG:root:Executed in global space: 'num_slrs = 2'
+DEBUG:root:Found block match!
+DEBUG:root:Modify the block!
+DEBUG:root:Evaluated 'i+1' to '1'
+DEBUG:root:Evaluated 'i % num_slrs' to '0'
+DEBUG:root:Found block match!
+DEBUG:root:Modify the block!
+DEBUG:root:Evaluated 'i+1' to '1'
+DEBUG:root:Evaluated 'i' to '0'
+DEBUG:root:Parsing complete. Write result to file.

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Werror -Wextra -Wshadow -rdynamic CMakeFiles/link_test.dir/link_a.cpp.o CMakeFiles/link_test.dir/link_b.cpp.o -o link_test 

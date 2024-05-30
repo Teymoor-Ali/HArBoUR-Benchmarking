@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstream_xilinx.a CMakeFiles/stream_xilinx.dir/execution_default.cpp.o CMakeFiles/stream_xilinx.dir/stream_benchmark.cpp.o
+/usr/bin/ranlib libstream_xilinx.a
